@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Form</title>
+
+<style>
+body{
+    background:#5f9ea0;
+    font-family:Arial;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+}
+
+input{
+    width:300px;
+    padding:5px;
+    margin:5px 0;
+}
+
+button{
+    padding:5px 15px;
+    margin:5px;
+}
+
+table{
+    margin-top:20px;
+    border-collapse:collapse;
+    background:#00ffff;
+}
+
+th,td{
+    border:1px solid black;
+    padding:8px;
+    text-align:center;
+}
+</style>
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h3>Fullname_Customer</h3>
+<input type="text" id="name">
+
+<h3>Id_Pro</h3>
+<input type="text" id="id">
+
+<h3>Name_Pro</h3>
+<input type="text" id="prname">
+
+<h3>Quantity_Pro</h3>
+<input type="text" id="qty">
+
+<h3>Price_Pro</h3>
+<input type="text" id="price">
+
+<br>
+
+<button onclick="save()">Save</button>
+<button onclick="show()">Show</button>
+<button onclick="reset()">Reset</button>
+
+<table>
+<thead>
+<tr>
+<th>Auto_Increment</th>
+<th>Fullname_Customer</th>
+<th>Id_Pro</th>
+<th>Name_Pro</th>
+<th>Quantity_Pro</th>
+<th>Price_Pro</th>
+<th>Discount</th>
+<th>Amount</th>
+<th>Total</th>
+</tr>
+</thead>
+
+<tbody id="tbl"></tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
